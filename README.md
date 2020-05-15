@@ -1,35 +1,20 @@
----
-page_type: sample
-languages:
-- typescript
-products:
-- office-teams
-- ms-graph
-description: "Microsoft Teams Meetings app for Learning Management Systems"
-urlFragment: "msteams-app-lms-meetings"
----
 
-# Microsoft Teams Meetings App for Learning Management Systems (LMS)
 
-<!-- 
-Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
+# Instant Telemedicine Meeting
 
-Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
 
-Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
 
-Welcome to the embeddable Microsoft Teams meeting link creator. With it, Learning Management Systems and app developers can provide an easy way for their users to create Teams meeting links and share them directly with participants. 
+Welcome to the embeddable Telemedicine meeting link creator. With it, app developers can provide an easy way for their users to create Telemedicine meeting links and share them directly with participants. 
 
 ![Screenshot of the solution](doc/Splash.gif)
 
 The app provides an easy interface where users can:
 
 1) Sign in using their Microsoft account
-2) Create a Teams meeting link
+2) Create a Teams meeting link to instantly start a Telemedicine meeting
 3) Copy the meeting information to share within their LMS
 
-Integrating this app template allows you to enable remote learning for your entire userbase by bringing the power of Microsoft Teams' online meetings to your users.
+Integrating this app template allows you to enable an instant or scheduled Telemedicine appointment. 
 
 ## Contents
 

@@ -375,7 +375,71 @@ function MeetingPageComponent(props: MeetingPageProps) {
               }
             />
           </StackItem>
+
         </Stack>
+
+        <Stack>
+          <div>First Name:</div>
+          <TextField id="standard-basic" label="Standard" />
+        <StackItem>
+            <TextField
+              className="newMeetingInput"
+              placeholder="First Name"
+              value={props.meeting?.subject}
+              underlined
+              onChange={onSubjectChanged}
+              errorMessage={
+                validationEnabled
+                  ? props.validationFailures.invalidTitle
+                  : undefined
+              }
+            />
+          </StackItem>
+          <div>Last Name:</div>
+          <StackItem >
+            <TextField
+              className="newMeetingInput"
+              placeholder="Last Name"
+              value={props.meeting?.subject}
+              underlined
+              onChange={onSubjectChanged}
+              errorMessage={
+                validationEnabled
+                  ? props.validationFailures.invalidTitle
+                  : undefined
+              }
+            />
+          </StackItem>
+          <StackItem >
+            <TextField
+              className="newMeetingInput"
+              placeholder="Phone Number"
+              value={props.meeting?.subject}
+              underlined
+              onChange={onSubjectChanged}
+              errorMessage={
+                validationEnabled
+                  ? props.validationFailures.invalidTitle
+                  : undefined
+              }
+            />
+          </StackItem>
+          <StackItem >
+            <TextField
+              className="newMeetingInput"
+              placeholder="Email"
+              value={props.meeting?.subject}
+              underlined
+              onChange={onSubjectChanged}
+              errorMessage={
+                validationEnabled
+                  ? props.validationFailures.invalidTitle
+                  : undefined
+              }
+            />
+          </StackItem>
+        </Stack>
+        
 
         <div className="newMeetingDatePickerContainer">
           <FontIcon iconName="Clock" className={inputIconClass} />

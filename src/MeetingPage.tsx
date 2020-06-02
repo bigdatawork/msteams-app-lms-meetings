@@ -357,12 +357,13 @@ function MeetingPageComponent(props: MeetingPageProps) {
             </Stack>
           </StackItem>
         </Stack>
+
         <Stack horizontal>
-          <StackItem className="newMeetingInputIcon">
+<StackItem className="newMeetingInputIcon">
             <FontIcon iconName="Edit" className={inputIconClass} />
           </StackItem>
           <StackItem grow>
-            <TextField
+            <TextField label="Meeting info"
               className="newMeetingInput"
               placeholder={translate('meetingPage.title.input')}
               value={props.meeting?.subject}
@@ -378,70 +379,13 @@ function MeetingPageComponent(props: MeetingPageProps) {
 
         </Stack>
 
-        <Stack>
-          <div>First Name:</div>
-          <TextField id="standard-basic" label="Standard" />
-        <StackItem>
-            <TextField
-              className="newMeetingInput"
-              placeholder="First Name"
-              value={props.meeting?.subject}
-              underlined
-              onChange={onSubjectChanged}
-              errorMessage={
-                validationEnabled
-                  ? props.validationFailures.invalidTitle
-                  : undefined
-              }
-            />
-          </StackItem>
-          <div>Last Name:</div>
-          <StackItem >
-            <TextField
-              className="newMeetingInput"
-              placeholder="Last Name"
-              value={props.meeting?.subject}
-              underlined
-              onChange={onSubjectChanged}
-              errorMessage={
-                validationEnabled
-                  ? props.validationFailures.invalidTitle
-                  : undefined
-              }
-            />
-          </StackItem>
-          <StackItem >
-            <TextField
-              className="newMeetingInput"
-              placeholder="Phone Number"
-              value={props.meeting?.subject}
-              underlined
-              onChange={onSubjectChanged}
-              errorMessage={
-                validationEnabled
-                  ? props.validationFailures.invalidTitle
-                  : undefined
-              }
-            />
-          </StackItem>
-          <StackItem >
-            <TextField
-              className="newMeetingInput"
-              placeholder="Email"
-              value={props.meeting?.subject}
-              underlined
-              onChange={onSubjectChanged}
-              errorMessage={
-                validationEnabled
-                  ? props.validationFailures.invalidTitle
-                  : undefined
-              }
-            />
-          </StackItem>
-        </Stack>
         
-
+        <div>
+        <Text variant="xLarge" styles={boldStyle}>
+        Schedule an appointment<br></br></Text>
+        </div>
         <div className="newMeetingDatePickerContainer">
+          
           <FontIcon iconName="Clock" className={inputIconClass} />
           <div className="newMeetingPicker">
             <DateTimePicker

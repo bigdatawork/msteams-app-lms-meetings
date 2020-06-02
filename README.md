@@ -24,7 +24,6 @@ Integrating this app template allows you to enable an instant or scheduled Telem
 | `public`          | Static assets                              |
 | `deploy`          | Deployment template and scripts            |
 | `.gitignore`      | Define what to ignore at commit time       |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample  |
 | `README.md`       | This README file                           |
 | `LICENSE`         | The license for the sample                 |
 
